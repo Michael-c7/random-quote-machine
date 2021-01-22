@@ -1,0 +1,123 @@
+
+:root {
+  --test-color:#16a085;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color:var(--test-color);
+  transition:3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+
+.card {
+  position: absolute;
+  background-color:#fff;
+  box-shadow:0 0 15px rgba(87, 87, 87, 0.493);
+  max-width:30rem;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  border-radius:5px;
+  padding:2rem;
+  transition:3s ease;
+}
+
+.card__inner {
+  max-width:100%;
+  margin:0 auto;
+}
+
+.quote {
+  color:var(--test-color);
+  font-size:1.5rem;
+  letter-spacing: 0.25px;
+  font-weight: 500;
+  transition:3s ease;
+}
+
+.quote-icon {
+  margin-right:0.5rem;
+  transition:3s ease;
+}
+
+.quote-text {
+  display:inline;
+  transition:3s ease;
+}
+
+.quote-author {
+  color:var(--test-color);
+  font-size:1rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  text-align: right;
+  margin-top:1rem;
+  margin-bottom:2rem;
+  transition:3s ease;
+}
+
+.quote-buttons {
+  position: relative;
+}
+
+.quote-button {
+  border:none;
+  border-radius: 5px;
+  background-color:var(--test-color);
+  color:#fff;
+  width:2.5rem;
+  height:2.5rem;
+  transition:3s ease;
+}
+
+.quote-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.quote-button:active {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.tumblr-btn {
+  margin-left:0.5rem;
+  transition:3s ease;
+}
+
+.new-quote-btn {
+  font-size:0.9rem;
+  letter-spacing: 1px;
+  width:6rem;
+  height:2.5rem;
+  position: absolute;
+  left:100%;
+  transform: translateX(-100%);
+}
+
+.icon {
+  font-size:1rem;
+}
